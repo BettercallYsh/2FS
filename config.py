@@ -5,33 +5,33 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8030277847:AAFI4iyBTAvFjc0TucsN5U7p6sJra0LwMLk")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6931355424:AAEyxsy5B7onPBsVDhNH2tzAsZzXJ_JFzEs")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "20841767"))
+APP_ID = int(os.environ.get("APP_ID", "24938067"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "9a0aec111e02a302f74ad535bd98440a")
+API_HASH = os.environ.get("API_HASH", "d9f7ae36c6f7709f3aaa238ebcc80acb")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002133263220"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002056431118"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "realachyutam")
+OWNER = os.environ.get("OWNER", "brain485")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7133847655"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6452097643"))
 
 #Port
-PORT = os.environ.get("PORT", "4322")
+PORT = os.environ.get("PORT", "4563")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Yashsharma:3oH3vnyH6dIxtO7W@yashcluster.az6xy1k.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "arigato")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://harshsharma:harsh@harshsharma.2jstkwo.mongodb.net/")
+DB_NAME = os.environ.get("DATABASE_NAME", "boobiediary")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002664699758"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001938566929"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002139953393"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002181869113"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -39,7 +39,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>Yo {first}\n\n I am a file sharing bot </b>")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "1439206175 7133847655").split()):
+    for x in (os.environ.get("ADMINS", "6968641742").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -57,7 +57,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" el
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "you are not my admin"
+USER_REPLY_TEXT = "sorry this command is for admins only"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(5191566338)
@@ -82,3 +82,5 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
+
+
