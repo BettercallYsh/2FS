@@ -5,29 +5,29 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", ":AAHANYW2ykuI-")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7362352455:AAEC0yD-FOQC_UG3sNhubjv-zFT8k2eUygM")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "24938067"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "9a0aec111e02a302f74ad535bd98440a")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002049639331"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "owotodd")
+OWNER = os.environ.get("OWNER", "brain485")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6497757690"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6452097643"))
 
 #Port
-PORT = os.environ.get("PORT", "3030")
+PORT = os.environ.get("PORT", "7780")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://:@.2jstkwo.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharextra")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://harshsharma:harsh@madhav.okjk2kp.mongodb.net/")
+DB_NAME = os.environ.get("DATABASE_NAME", "filesharextrabot")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002167548444"))
