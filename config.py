@@ -5,41 +5,41 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7774951059:")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7253912560:AAHANYW2ykuI-VILLFciBUWCywwjwTdXg7I")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "24938067"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "d9f7ae36c6f7709f3aaa238ebcc80acb")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002133263220"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002049639331"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "realachyutam")
+OWNER = os.environ.get("OWNER", "owotodd")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7133847655"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6497757690"))
 
 #Port
-PORT = os.environ.get("PORT", "6511")
+PORT = os.environ.get("PORT", "3030")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Yasaz6xy1k.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "onisan")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://harshsharma:harsh@harshsharma.2jstkwo.mongodb.net/")
+DB_NAME = os.environ.get("DATABASE_NAME", "filesharextra")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001755279044"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001543718054"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002167548444"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002010376373"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>Yo {first}\n\n I am a file sharing bot </b>")
 try:
-    ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1439206175 7133847655").split()):
+    ADMINS=[6376328008]
+    for x in (os.environ.get("ADMINS", "7481752901 6452097643").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -69,7 +69,7 @@ logging.basicConfig(
     format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
     datefmt='%d-%b-%y %H:%M:%S',
     handlers=[
-        RotatingFileHandler(
+        RotatingFileHandler(x,
             LOG_FILE_NAME,
             maxBytes=50000000,
             backupCount=10
